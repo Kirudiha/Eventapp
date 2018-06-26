@@ -23,8 +23,8 @@ public class Event  {
 	@Column
 	private Boolean isActive;
 
-	@OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-	@JoinColumn(name = "eventId")
+	@OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY,mappedBy="event")
+	// @JoinColumn(name = "eventId")
 	private List<Agenda> agenda;
 	//private Agenda ag;
 

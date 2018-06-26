@@ -18,9 +18,9 @@ public class Agenda {
 	@Column
 	private String instructor;
 
-	@ManyToOne(cascade = CascadeType.ALL)
-	@JoinColumn(name = "eventId", updatable = false, insertable = true)
-	private Event event;
+	// @ManyToOne(cascade = CascadeType.ALL)
+	// @JoinColumn(name = "eventId", updatable = false, insertable = true)
+	 private Event event;
 
 	public Agenda() {
 		super();
@@ -61,6 +61,6 @@ public class Agenda {
 		this.instructor =instructor;
 	}
 
-	public void setEvent(Event event) {
-		this.event = event;}
-	}
+	// public void setEvent(Event event) {
+		// this.event = event;}
+	 }

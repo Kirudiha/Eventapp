@@ -1,4 +1,4 @@
-package com.kgisl.Eventapp.model;
+package com.kgisl.Eventapp;
 
 class Employee{  
     float salary=40000;  
